@@ -1,0 +1,56 @@
+.absolute {
+  position: absolute;
+}
+
+.z-index-top {
+  z-index: 9999;
+}
+
+.main-navbar {
+  height: 150px;
+  position: relative;
+}
+
+.navbar-top {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.75rem;
+}
+
+.member-nav {
+  margin-right: 10px;
+}
+
+.member-nav:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 88px;
+  width: 1px;
+  height: 10px;
+  background-color: #000;
+  opacity: 0.2;
+  top: 50%;
+  margin-top: -4px;
+}
+
+.nav-icon {
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.nav-bottom {
+  margin-left: 35px;
+}
+
+.nav-top-item {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.nav-bottom-item {
+  color: #fff;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=navbar_home.css.map */
