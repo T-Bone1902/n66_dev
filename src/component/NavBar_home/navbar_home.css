@@ -29,8 +29,8 @@
   right: 88px;
   width: 1px;
   height: 10px;
-  background-color: #000;
-  opacity: 0.2;
+  background-color: #fff;
+  opacity: 0.5;
   top: 50%;
   margin-top: -4px;
 }
@@ -41,7 +41,7 @@
 }
 
 .nav-bottom {
-  margin-left: 35px;
+  margin: 15px;
 }
 
 .nav-top-item {
@@ -52,5 +52,13 @@
 .nav-bottom-item {
   color: #fff;
   opacity: 0.9;
+}
+
+.nav-bottom-item:hover .nav-bottom-item:after {
+  background-color: 'red';
+}
+
+.nav-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /*# sourceMappingURL=navbar_home.css.map */

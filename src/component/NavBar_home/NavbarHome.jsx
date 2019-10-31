@@ -44,7 +44,7 @@ class NavBar_Home extends Component {
                   <span className="nav-top-item">聯絡我們</span>
                 </Nav.Link>
               </Nav>
-              <Nav className="ml-auto">
+              <Nav className="ml-auto nav-container">
                 <Nav.Link className="nav-bottom" href="#home">
                   <span className="nav-bottom-item">旅遊行程</span>
                 </Nav.Link>

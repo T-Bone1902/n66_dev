@@ -7,7 +7,7 @@
 }
 
 .main_caption {
-  margin-bottom: 12%;
+  margin-bottom: 13%;
 }
 
 .main_title {
@@ -31,6 +31,8 @@
   border-radius: 0;
   background-color: transparent;
   border: 1px solid #fff;
+  -webkit-transition: color 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: color 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), border 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .main_btn:hover {
@@ -39,7 +41,19 @@
   border: 1px solid #fff;
 }
 
+.banner-img-container {
+  height: 90vh;
+}
+
 .banner-img {
   height: 90vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-indicators {
+  margin-bottom: 10%;
 }
 /*# sourceMappingURL=carousel_home.css.map */
