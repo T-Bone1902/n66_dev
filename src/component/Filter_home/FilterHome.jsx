@@ -16,7 +16,7 @@ import "./filter_home.css";
 class FilterHome extends Component {
   state = {
     searchbox: {
-      isClicked: false,
+      isActive: false,
       originalDom: (
         <>
           <Dropdown className="filter-icon-container d-flex-2">
@@ -179,10 +179,10 @@ class FilterHome extends Component {
   };
 
   handleSearch = e => {
-    const { isClicked } = this.state.searchbox;
-    if (isClicked === false) {
+    const { isActive } = this.state.searchbox;
+    if (isActive === false) {
       const searchbox = { ...this.state.searchbox };
-      searchbox.isClicked = true;
+      searchbox.isActive = true;
       searchbox.dom = (
         <InputGroup className="searchbox-input-container">
           <FormControl
@@ -195,9 +195,9 @@ class FilterHome extends Component {
       );
       this.setState({ searchbox });
     }
-    if (isClicked === true) {
+    if (isActive === true) {
       const searchbox = { ...this.state.searchbox };
-      searchbox.isClicked = false;
+      searchbox.isActive = false;
       searchbox.dom = this.state.searchbox.originalDom;
       this.setState({ searchbox });
     }
@@ -207,7 +207,7 @@ class FilterHome extends Component {
     const { searchbox } = this.state;
     return (
       <Form className="main-filter-container">
-        <Row className="row-no-margin">
+        <Row className="row-no-margin searchbox-row">
           {/* <Dropdown className="filter-icon-container d-flex-2">
             <Dropdown.Toggle id="dropdown-basic" className="filter-icon">
               <Location className="location" height="24" width="24"></Location>
@@ -284,7 +284,10 @@ class FilterHome extends Component {
             </Dropdown.Menu>
           </Dropdown> */}
           {searchbox.dom}
-          <div className="d-flex d-flex-1 search" onClick={this.handleSearch}>
+          <div
+            className="d-flex d-flex-1 search-btn"
+            onClick={this.handleSearch}
+          >
             <Search heigth="20" width="20" className="margin-auto search" />
           </div>
           <Button type="submit" className="main-filter-btn d-flex-1">
