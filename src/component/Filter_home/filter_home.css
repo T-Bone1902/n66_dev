@@ -1,30 +1,97 @@
-.main-filter {
-  max-width: 900px;
-  margin: 10px auto 0 auto;
+.row-no-margin {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 
-.filter-container {
-  height: 70px;
-  padding: 0px;
+.margin-auto {
+  margin: auto;
 }
 
-.filter-item-container {
-  margin: 0;
-  padding: 0;
+.d-flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.d-flex-2 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.main-filter-container {
+  max-width: 800px;
+  margin: auto;
+  -webkit-box-shadow: 0px 10px 20px #888888;
+          box-shadow: 0px 10px 20px #888888;
+}
+
+.filter-icon-container {
+  border-right: 1px solid #d3d4d7;
+  margin: auto;
+  height: 75px;
+}
+
+.filter-icon {
+  color: #242a3a !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-radius: 0 !important;
   width: 100%;
   height: 100%;
+  padding: 0 !important;
+  font-weight: 250 !important;
 }
 
-.filter-items {
+.filter-icon-title {
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+  color: #242a3a;
+}
+
+.toggle-menu {
   width: 100%;
-  height: 100%;
-  border: none;
-  border-right: 1px solid darkgray;
+  height: 200px;
+  border-radius: 0 !important;
+  overflow: scroll;
 }
 
-.row-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.toggle-item {
+  margin: auto;
+  border-bottom: 1px solid #242a3a2e !important;
+  font-size: 14px;
+  padding: 1rem;
+  color: #242a3a;
+}
+
+.main-filter-btn {
+  color: #fff !important;
+  background-color: #242a3a !important;
+  border-color: transparent !important;
+  border-radius: 0 !important;
+}
+
+.filter-icon:hover {
+  background-color: #242a3a !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.filter-icon:hover .filter-icon-title {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.filter-icon:hover .location,
+.trac {
+  fill: #fff;
+}
+
+.main-filter-btn:hover {
+  background-color: #232323 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=filter_home.css.map */
