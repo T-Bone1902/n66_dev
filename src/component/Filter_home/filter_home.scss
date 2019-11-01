@@ -65,6 +65,11 @@
   border-radius: 0 !important;
 }
 
+.search {
+  cursor: pointer;
+  height: 75px;
+}
+
 // hover
 
 .filter-icon:hover {
@@ -79,11 +84,31 @@
 }
 
 .filter-icon:hover .location,
-.trac {
+.filter-icon:hover .trac,
+.filter-icon:hover .binoculars {
   fill: #fff;
+}
+
+.search:hover {
+  fill: #fff;
+  background-color: #242a3a;
 }
 
 .main-filter-btn:hover {
   background-color: #232323 !important;
   transition: 0.5s;
+}
+
+// clicked
+.searchbox-input-container {
+  flex: 6 !important;
+  border-right: 1px solid #d3d4d7;
+}
+
+.searchbox-input {
+  height: 70%;
+  border-radius: 0 !important;
+  margin: 10px 15px;
+  background-color: #f3f3f3;
+  border: none;
 }
