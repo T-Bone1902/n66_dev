@@ -8,8 +8,6 @@ class Login extends Component {
       document.querySelector(".cont").classList.toggle("s--signup");
       document.querySelector(".logo").classList.toggle("logo-color");
     });
-
-    // document.querySelector('')
   }
 
   render() {
