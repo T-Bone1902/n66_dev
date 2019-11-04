@@ -32,7 +32,8 @@ class MemberPassword extends Component {
                         </Card.Body>
                     </Accordion.Collapse>
                 </Card>
-            </Accordion>);
+            </Accordion>
+        );
     }
 }
 

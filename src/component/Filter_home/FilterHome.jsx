@@ -290,9 +290,12 @@ class FilterHome extends Component {
           >
             <Search heigth="20" width="20" className="margin-auto search" />
           </div>
-          <Button type="submit" className="main-filter-btn d-flex-1">
-            搜尋
+          <div>
+            <Button type="submit" className="main-filter-btn d-flex-1">
+              搜尋
           </Button>
+          </div>
+
         </Row>
       </Form>
     );
