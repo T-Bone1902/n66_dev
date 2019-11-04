@@ -9,7 +9,8 @@ import MemberLeftMenu from "./component/member_left_menu/MemberLeftMenu";
 import MemberInfoList from "./component/Member_info_list/MemberInfoList";
 import MemberPassword from "./component/Member_password/MemberPassword";
 import WishList from "./component/Member_wish_list/MemberWishList";
-import OrderList from './component/Member_order_list/MemberOrderList'
+import OrderList from "./component/Member_order_list/MemberOrderList";
+import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
@@ -25,7 +26,8 @@ class App extends Component {
         {/* <MemberPassword /> */}
         {/* <WishList /> */}
         {/* <OrderList /> */}
-        <Login />
+        {/* <Login /> */}
+        <MemberCommentList />
       </>
     );
   }
