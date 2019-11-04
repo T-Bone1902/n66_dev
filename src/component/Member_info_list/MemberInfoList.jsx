@@ -9,7 +9,7 @@ class MemberInfoList extends Component {
         <Card>
           <Card.Header className="member-info-list-title">
             <Accordion.Toggle as={Button} variant="link" eventKey="0">
-              <span>個人資訊 </span>
+              <span>個人資訊</span>
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse
@@ -32,7 +32,7 @@ class MemberInfoList extends Component {
                   </div>
                   <div className="width-200 mr-2">
                     <Form.Label className="text-align-left">
-                      中文姓名
+                      中文姓名<span style={{ fontSize: '0.75rem', color: '#2a2a3a' }}>(須與旅遊證件一致)</span>
                     </Form.Label>
                     <Form.Control
                       className="my-2"
@@ -51,10 +51,9 @@ class MemberInfoList extends Component {
                 </Form.Group>
 
                 <Form.Group className="d-flex">
-                  {/* <div style={{ flex: 1 }}></div> */}
-                  <div className="width-200 mr-2">
+                  <div className="width-200 mr-2 last-name">
                     <Form.Label className="text-align-left">
-                      英文姓名
+                      英文姓名<span style={{ fontSize: '0.75rem', color: '#2a2a3a' }}>(須與旅遊證件一致)</span>
                     </Form.Label>
                     <Form.Control
                       className="my-2"
@@ -117,7 +116,7 @@ class MemberInfoList extends Component {
                   </div>
                 </Form.Group>
                 <Form.Group className="width-200">
-                  <Form.Label className="text-align-left no-margin">
+                  <Form.Label className="text-align-left">
                     電話號碼
                   </Form.Label>
                   <Form.Control className="my-2" type="tel" />
