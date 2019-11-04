@@ -13,7 +13,7 @@ class Login extends Component {
   render() {
     return (
       <div className="cont">
-        <Logo    className="logo" />
+        <Logo height="80" width="80" className="logo" />
         <form className="form sign-in" method="">
           <h2>會員登入</h2>
           <label>

@@ -23,10 +23,10 @@ class App extends Component {
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
         {/* <MemberPassword /> */}
-        <WishList />
-        <OrderList />
+        {/* <WishList /> */}
+        {/* <OrderList /> */}
+        <Login />
       </>
-      // <Login />
     );
   }
 }
