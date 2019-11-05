@@ -11,6 +11,12 @@ import MemberPassword from "./component/Member_password/MemberPassword";
 import WishList from "./component/Member_wish_list/MemberWishList";
 import OrderList from "./component/Member_order_list/MemberOrderList";
 import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
+import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
+// page
+import Comment from "./page/comment/Comment.jsx";
+import DashBoard from "./page/dashboard/DashBoard";
+import Order from "./page/order/Order";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends Component {
@@ -27,7 +33,13 @@ class App extends Component {
         {/* <WishList /> */}
         {/* <OrderList /> */}
         {/* <Login /> */}
-        <MemberCommentList />
+        {/* <MemberCommentList /> */}
+        {/* <CommentFilterBox /> */}
+
+        {/* page */}
+        {/* <Comment /> */}
+        {/* <DashBoard /> */}
+        <Order />
       </>
     );
   }

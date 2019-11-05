@@ -37,7 +37,7 @@ class OrderList extends Component {
                                         </div>
 
                                     </div>
-                                    <div className="ml-auto mt-auto">
+                                    <div className="ml-auto mt-auto to-comment-container">
                                         <Button className="to-comment">前往評論</Button>
                                     </div>
                                 </Col>

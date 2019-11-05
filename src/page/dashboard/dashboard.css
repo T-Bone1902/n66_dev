@@ -1,0 +1,9 @@
+@media only screen and (max-width: 768px) {
+  .member-section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

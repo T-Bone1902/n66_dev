@@ -32,7 +32,7 @@ class MemberInfoList extends Component {
                   </div>
                   <div className="width-200 mr-2">
                     <Form.Label className="text-align-left">
-                      中文姓名<span style={{ fontSize: '0.75rem', color: '#2a2a3a' }}>(須與旅遊證件一致)</span>
+                      中文姓名
                     </Form.Label>
                     <Form.Control
                       className="my-2"
@@ -51,9 +51,10 @@ class MemberInfoList extends Component {
                 </Form.Group>
 
                 <Form.Group className="d-flex">
-                  <div className="width-200 mr-2 last-name">
+                  <div className="width-100 mr-3"></div>
+                  <div className="width-200 mr-2">
                     <Form.Label className="text-align-left">
-                      英文姓名<span style={{ fontSize: '0.75rem', color: '#2a2a3a' }}>(須與旅遊證件一致)</span>
+                      英文姓名
                     </Form.Label>
                     <Form.Control
                       className="my-2"
@@ -116,9 +117,7 @@ class MemberInfoList extends Component {
                   </div>
                 </Form.Group>
                 <Form.Group className="width-200">
-                  <Form.Label className="text-align-left">
-                    電話號碼
-                  </Form.Label>
+                  <Form.Label className="text-align-left">電話號碼</Form.Label>
                   <Form.Control className="my-2" type="tel" />
                 </Form.Group>
 

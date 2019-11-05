@@ -110,10 +110,6 @@ select:not([multiple]) {
   padding: 0.375rem 0.75rem;
 }
 
-.last-name {
-  margin-left: 13.3%;
-}
-
 .birthday {
   border-bottom: 1px solid #eaeaea;
   padding-bottom: 1rem;

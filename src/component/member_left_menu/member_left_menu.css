@@ -11,8 +11,7 @@ body {
 }
 
 .member-left-menu-container {
-  height: 500px !important;
-  width: 250px;
+  margin-top: 10px;
   background-color: #f8f8f8;
   padding: 10px;
   border: none;
@@ -59,7 +58,7 @@ body {
 }
 
 .card-body-3 {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 
 .member-ul-container {
