@@ -8,7 +8,7 @@ import NavBar from "./component/NavBar/NavBar";
 import MemberLeftMenu from "./component/member_left_menu/MemberLeftMenu";
 import MemberInfoList from "./component/Member_info_list/MemberInfoList";
 import MemberPassword from "./component/Member_password/MemberPassword";
-import WishList from "./component/Member_wish_list/MemberWishList";
+import MemberWishList from "./component/Member_wish_list/MemberWishList";
 import OrderList from "./component/Member_order_list/MemberOrderList";
 import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
 import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
@@ -16,6 +16,7 @@ import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
 import Comment from "./page/comment/Comment.jsx";
 import DashBoard from "./page/dashboard/DashBoard";
 import Order from "./page/order/Order";
+import WishList from "./page/wishlist/WishList";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -30,7 +31,7 @@ class App extends Component {
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
         {/* <MemberPassword /> */}
-        {/* <WishList /> */}
+        {/* <MemberWishList /> */}
         {/* <OrderList /> */}
         {/* <Login /> */}
         {/* <MemberCommentList /> */}
@@ -39,7 +40,8 @@ class App extends Component {
         {/* page */}
         {/* <Comment /> */}
         {/* <DashBoard /> */}
-        <Order />
+        {/* <Order /> */}
+        <WishList />
       </>
     );
   }
