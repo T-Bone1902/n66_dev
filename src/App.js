@@ -12,6 +12,8 @@ import MemberWishList from "./component/Member_wish_list/MemberWishList";
 import OrderList from "./component/Member_order_list/MemberOrderList";
 import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
 import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
+import MemberCoupon from "./component/Member_coupon/MemberCoupon";
+
 // page
 import Comment from "./page/comment/Comment.jsx";
 import DashBoard from "./page/dashboard/DashBoard";
@@ -26,7 +28,7 @@ class App extends Component {
       <>
         {/* <NavBarHome /> */}
         {/* <CarouselHome /> */}
-        <FilterHome />
+        {/* <FilterHome /> */}
         {/* <NavBar /> */}
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
@@ -39,10 +41,9 @@ class App extends Component {
 
         {/* page */}
         {/* <Comment /> */}
-        {/* <DashBoard /> */}
+        <DashBoard />
         {/* <Order /> */}
         {/* <WishList /> */}
-        
       </>
     );
   }

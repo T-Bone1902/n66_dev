@@ -7,6 +7,8 @@ import MemberPassword from "../../component/Member_password/MemberPassword";
 import MemberCommentList from "../../component/Member_comment_list/MemberCommentList";
 import MemberOrderList from "../../component/Member_order_list/MemberOrderList";
 import MemberWishList from "../../component/Member_wish_list/MemberWishList";
+import MemberCoupon from "../../component/Member_coupon/MemberCoupon";
+
 import axios from "axios";
 import "./dashboard.css";
 //
@@ -34,9 +36,8 @@ class DashBoard extends Component {
               <MemberLeftMenu />
             </Col>
             <Col className="col-xl-9 col-md-8 ">
-              {/* <MemberInfoList data={data} /> */}
-              {/* <MemberPassword /> */}
               <Switch>
+                <Route path="/members/coupons" component={MemberCoupon} />
                 <Route path="/members/comments" component={MemberCommentList} />
                 <Route path="/members/orders" component={MemberOrderList} />
                 <Route

@@ -27,7 +27,7 @@ class MemberLeftMenu extends Component {
             </div>
             <div className="text-align-center card-body-2">
               <Card.Title>
-                <Link to="">0</Link>
+                <Link to="/members/coupons">0</Link>
               </Card.Title>
               <Card.Text className="text-align-center">
                 <span>可用優惠碼</span>
