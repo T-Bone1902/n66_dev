@@ -39,9 +39,9 @@ class App extends Component {
 
         {/* page */}
         {/* <Comment /> */}
-        {/* <DashBoard /> */}
+        <DashBoard />
         {/* <Order /> */}
-        <WishList />
+        {/* <WishList /> */}
       </>
     );
   }

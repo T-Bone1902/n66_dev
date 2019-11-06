@@ -4,6 +4,9 @@ import "./member_info_list.css";
 class MemberInfoList extends Component {
   state = {};
   render() {
+    const { data, handleUpdate } = this.props;
+    console.log(data);
+
     return (
       <Accordion defaultActiveKey="0" className="member-info-list-container">
         <Card>
@@ -26,6 +29,7 @@ class MemberInfoList extends Component {
                   <div className="width-100 mr-3">
                     <Form.Label className="text-align-left">稱謂</Form.Label>
                     <Form.Control as="select" className="dropdowns my-2">
+                      <option>請選擇</option>
                       <option>先生</option>
                       <option>女士</option>
                     </Form.Control>
@@ -125,7 +129,7 @@ class MemberInfoList extends Component {
                   <Form.Label className="text-align-left my-2">
                     電子信箱
                   </Form.Label>
-                  <Form.Control type="email" />
+                  <Form.Control type="email" defaultValue={data.email} />
                 </Form.Group>
                 <Button type="submit">儲存</Button>
               </Form>
