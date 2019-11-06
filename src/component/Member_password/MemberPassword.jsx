@@ -5,7 +5,7 @@ class MemberPassword extends Component {
     state = {}
     render() {
         return (
-            <Accordion defaultActiveKey="0" className="member-password-container">
+            <Accordion defaultActiveKey="0" className="member-password-container mt-4">
                 <Card>
                     <Card.Header className="member-password-title">
                         <Accordion.Toggle as={Button} variant="link" eventKey="1">

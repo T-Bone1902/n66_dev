@@ -17,8 +17,8 @@ import Comment from "./page/comment/Comment.jsx";
 import DashBoard from "./page/dashboard/DashBoard";
 import Order from "./page/order/Order";
 import WishList from "./page/wishlist/WishList";
-
-import { BrowserRouter as Router, Route } from "react-router-dom";
+//
+import { Route } from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -42,6 +42,7 @@ class App extends Component {
         <DashBoard />
         {/* <Order /> */}
         {/* <WishList /> */}
+        
       </>
     );
   }

@@ -1,14 +1,13 @@
-
 $primaryColor: #242a3a;
 $secColor: #96daf0;
 
-body{
+body {
   overflow-x: hidden;
 }
 
 .navbar-container {
   padding: 0 !important;
-  border-bottom: 1px solid $primaryColor;
+  border-bottom: 1px solid #d5d5d5;
   background-color: #fff;
 }
 
@@ -27,15 +26,15 @@ body{
   border-bottom: 1px solid #8b8989;
   color: #242a3a;
   font-size: 1rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.navbar-item span{
+.navbar-item span {
   color: #8b8989;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.blue-line{
+.blue-line {
   width: 0%;
   height: 2px;
   background-color: $secColor;
@@ -43,25 +42,24 @@ body{
   bottom: -1px;
   left: 50%;
   transform: translate(-50%, 0);
-  transition: .3s;
+  transition: 0.3s;
   z-index: 2;
 }
 
-.navbar-item:hover .blue-line{
+.navbar-item:hover .blue-line {
   width: 100%;
 }
 
-.navbar-item:hover span{
+.navbar-item:hover span {
   color: $primaryColor;
 }
-
 
 .icon-container {
   width: 80px;
   height: 80px;
   display: flex;
   border-left: 1px solid #d5d5d5;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .icon-container:hover {
@@ -78,12 +76,12 @@ body{
 
 .user-icon {
   margin: auto;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .cart-icon {
   margin: auto;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .breadcrumb {
@@ -92,7 +90,7 @@ body{
   margin: 80px 0 0 0 !important;
   padding: 0 0 0 20px;
 
-  a{
+  a {
     color: #fff;
     font-size: 0.75rem;
   }
@@ -103,36 +101,34 @@ body{
   }
 }
 
-.breadcrumb-item::before{
-  content: '>';
+.breadcrumb-item::before {
+  content: ">";
 }
 
-
-.navBtn{
+.navBtn {
   display: none !important;
   height: 80px !important;
   width: 80px !important;
   background-color: #fff !important;
   cursor: pointer;
-  border-left: 1px solid $primaryColor;
-  transition: .5s;
-  
+  border-left: 1px solid #d5d5d5;
+  transition: 0.5s;
 
-  .toggle-inner{
-      width: 32px;
-      height: 26px;
+  .toggle-inner {
+    width: 32px;
+    height: 26px;
   }
 
-  .darkblue-line{
+  .darkblue-line {
     width: 100%;
     height: 4px;
     background-color: $primaryColor;
     transform-origin: left;
-    transition: transform .5s , opacity .3s;
+    transition: transform 0.5s, opacity 0.3s;
   }
 }
 
-.right-menu{
+.right-menu {
   position: absolute;
   top: 81px;
   left: 100%;
@@ -141,72 +137,65 @@ body{
   list-style: none;
   background-color: #fff;
   padding: 0;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 999;
-  
-  li{
-      position: relative;
-      border-bottom: 1px solid #cacbce;
-      display: flex;
-      align-items: center;
-      padding: 20px 0;
+
+  li {
+    position: relative;
+    border-bottom: 1px solid #cacbce;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
   }
 
-  li::before{
-      content: "";
-      
-      font-weight: bold;
-      background-color: $secColor;
-      border-radius: 50%;
+  li::before {
+    content: "";
 
-      position: absolute;
-      height: 8px;
-      width: 8px;
-      display: block;
-      top: 50%;
-      left: 20px;
-      transform: translate(-50%,-50%);
+    font-weight: bold;
+    background-color: $secColor;
+    border-radius: 50%;
+
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    display: block;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
   }
 
-
-  a{
-      display: block;
-      width: 100%;
-      height: 100%;
-      text-decoration: none;
-      margin-left: 40px ;
-      h5{
-          margin: 0 0 3px 0;
-      }
-      h6{
-          margin: 0;
-      }
-      h5, h6{
-          color: $primaryColor;
-          // text-decoration: none;
-      }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    margin-left: 40px;
+    h5 {
+      margin: 0 0 3px 0;
+    }
+    h6 {
+      margin: 0;
+    }
+    h5,
+    h6 {
+      color: $primaryColor;
+      // text-decoration: none;
+    }
   }
 }
 
-
-
-@media screen and (max-width: 858px){
-
-  .navBtn{
+@media screen and (max-width: 858px) {
+  .navBtn {
     display: flex !important;
   }
 
-  .navCollapse{
+  .navCollapse {
     display: none;
   }
 }
 
-
-
-@media screen and (min-width: 859px){
-  .right-menu{
+@media screen and (min-width: 859px) {
+  .right-menu {
     left: 100%;
   }
-
 }
-

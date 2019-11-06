@@ -129,7 +129,7 @@ class MemberInfoList extends Component {
                   <Form.Label className="text-align-left my-2">
                     電子信箱
                   </Form.Label>
-                  <Form.Control type="email" defaultValue={data.email} />
+                  <Form.Control type="email" />
                 </Form.Group>
                 <Button type="submit">儲存</Button>
               </Form>

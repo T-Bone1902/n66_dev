@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import MemberLeftMenu from "../../component/member_left_menu/MemberLeftMenu";
 import MemberCommentList from "../../component/Member_comment_list/MemberCommentList";
 import CommentFilterBox from "../../component/Comment_filter_box/CommentFilterBox";
+import NavBar from "../../component/NavBar/NavBar";
 import { Row, Col, DropdownButton, Dropdown } from "react-bootstrap";
 import { ReactComponent as Star } from "./img/star.svg";
 import { ReactComponent as StarSolid } from "./img/star-solid.svg";
@@ -10,7 +12,7 @@ class Comment extends Component {
   state = {};
   render() {
     return (
-      <div className="container mt-4">
+      <div className="container ">
         <Row>
           <Col>
             <div className="text-center comment-header">
@@ -26,7 +28,7 @@ class Comment extends Component {
         </Row>
         <Row>
           <Col className="col-lg-4 col-md-12 col-12 comment-regulation-container">
-            <div className="comment-regulation">
+            <div className="comment-regulation ">
               <h5>如何評論?</h5>
               <ol className="comment-term">
                 <li>參加66°N的旅行</li>
