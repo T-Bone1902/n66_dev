@@ -26,7 +26,7 @@ class App extends Component {
       <>
         {/* <NavBarHome /> */}
         {/* <CarouselHome /> */}
-        {/* <FilterHome /> */}
+        <FilterHome />
         {/* <NavBar /> */}
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
@@ -39,7 +39,7 @@ class App extends Component {
 
         {/* page */}
         {/* <Comment /> */}
-        <DashBoard />
+        {/* <DashBoard /> */}
         {/* <Order /> */}
         {/* <WishList /> */}
         

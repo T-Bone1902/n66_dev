@@ -5,12 +5,14 @@ import {
   Button,
   Row,
   InputGroup,
-  FormControl
+  FormControl,
+  Col
 } from "react-bootstrap";
 import { ReactComponent as Location } from "./img/location.svg";
 import { ReactComponent as Trac } from "./img/trac.svg";
 import { ReactComponent as Binoculars } from "./img/binoculars.svg";
 import { ReactComponent as Search } from "./img/search.svg";
+import { ReactComponent as Filter } from "./img/filter.svg";
 import "./filter_home.css";
 
 class FilterHome extends Component {
@@ -206,9 +208,10 @@ class FilterHome extends Component {
   render() {
     const { searchbox } = this.state;
     return (
-      <Form className="main-filter-container">
-        <Row className="row-no-margin searchbox-row">
-          {/* <Dropdown className="filter-icon-container d-flex-2">
+      <>
+        <Form className="main-filter-container">
+          <Row className="row-no-margin searchbox-row">
+            {/* <Dropdown className="filter-icon-container d-flex-2">
             <Dropdown.Toggle id="dropdown-basic" className="filter-icon">
               <Location className="location" height="24" width="24"></Location>
               <span className="filter-icon-title">目的地</span>
@@ -283,21 +286,36 @@ class FilterHome extends Component {
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown> */}
-          {searchbox.dom}
-          <div
-            className="d-flex d-flex-1 search-btn"
-            onClick={this.handleSearch}
-          >
-            <Search heigth="20" width="20" className="margin-auto search" />
-          </div>
-          <div>
-            <Button type="submit" className="main-filter-btn d-flex-1">
-              搜尋
-          </Button>
-          </div>
-
+            {searchbox.dom}
+            <div
+              className="d-flex d-flex-1 search-btn"
+              onClick={this.handleSearch}
+            >
+              <Search heigth="20" width="20" className="margin-auto search" />
+            </div>
+            <div className="d-flex-1 submit-btn">
+              <Button
+                type="submit"
+                className="main-filter-btn d-flex-1 text-center"
+              >
+                搜尋
+              </Button>
+            </div>
+          </Row>
+        </Form>
+        <Row className="before-rwd">
+          <Col>
+            <div className="main-filter-container-rwd d-flex">
+              <div className="icon d-flex">
+                <Filter className="m-auto " height="20" width="20" />
+              </div>
+              <div className="search">
+                <p>搜尋</p>
+              </div>
+            </div>
+          </Col>
         </Row>
-      </Form>
+      </>
     );
   }
 }
