@@ -62,9 +62,9 @@ class NavBar extends React.Component {
     return (
       <>
         <div className="navbar-container d-flex align-items-center fixed-top">
-          <div href="#home" className="navbar-logo mr-auto">
+          <a href="#home" role="button" className="navbar-logo mr-auto">
             <Logo height="60" width="60" />
-          </div>
+          </a>
 
           <a
             className="navBtn ml-auto d-flex justify-content-center align-items-center"
@@ -108,6 +108,16 @@ class NavBar extends React.Component {
             </Nav>
           </div>
 
+          <Breadcrumb className="mb-5">
+            <Breadcrumb.Item href="#">66N</Breadcrumb.Item>
+            <Breadcrumb.Item
+              href="https://getbootstrap.com/docs/4.0/components/breadcrumb/"
+              active
+            >
+              戶外用品
+            </Breadcrumb.Item>
+          </Breadcrumb>
+
           <ul className="right-menu">
             <li>
               <a href="#8">
@@ -131,16 +141,6 @@ class NavBar extends React.Component {
             </li>
           </ul>
         </div>
-
-        <Breadcrumb className="mb-5">
-          <Breadcrumb.Item href="#">66N</Breadcrumb.Item>
-          <Breadcrumb.Item
-            href="https://getbootstrap.com/docs/4.0/components/breadcrumb/"
-            active
-          >
-            戶外用品
-          </Breadcrumb.Item>
-        </Breadcrumb>
       </>
     );
   }
