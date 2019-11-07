@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBarHome from "./component/NavBar_home/NavbarHome";
+import NavBarHome from "./component/NavBar_home/NavBar_home";
 import CarouselHome from "./component/Carousel_home/CarouselHome";
 import FilterHome from "./component/Filter_home/FilterHome";
 import Login from "./component/Login/Login";
@@ -13,8 +13,12 @@ import OrderList from "./component/Member_order_list/MemberOrderList";
 import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
 import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
 import MemberCoupon from "./component/Member_coupon/MemberCoupon";
+<<<<<<< HEAD
 import CheckOutContent from './component/checkOutContent/checkOutContent';
 
+=======
+import TripDesNav from './component/TripDesNav/TripDesNav'
+>>>>>>> 7c754b59d8bb3290a9b114b3f08be023b240bd89
 
 // page
 import Comment from "./page/comment/Comment.jsx";
@@ -24,18 +28,18 @@ import WishList from "./page/wishlist/WishList";
 //
 import { Route } from "react-router-dom";
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <>
-        {/* <NavBarHome /> */}
-        {/* <CarouselHome /> */}
+        <TripDesNav/>
+        <CarouselHome />
         {/* <FilterHome /> */}
         {/* <NavBar /> */}
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
         {/* <MemberPassword /> */}
-        {/* <MemberWishList /> */}
+        <MemberWishList />
         {/* <OrderList /> */}
         {/* <Login /> */}
         {/* <MemberCommentList /> */}
