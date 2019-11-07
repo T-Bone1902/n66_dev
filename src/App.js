@@ -13,6 +13,8 @@ import OrderList from "./component/Member_order_list/MemberOrderList";
 import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
 import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
 import MemberCoupon from "./component/Member_coupon/MemberCoupon";
+import CheckOutContent from './component/checkOutContent/checkOutContent';
+
 
 // page
 import Comment from "./page/comment/Comment.jsx";
@@ -38,10 +40,10 @@ class App extends Component {
         {/* <Login /> */}
         {/* <MemberCommentList /> */}
         {/* <CommentFilterBox /> */}
-
+        <CheckOutContent />
         {/* page */}
         {/* <Comment /> */}
-        <DashBoard />
+        {/* <DashBoard /> */}
         {/* <Order /> */}
         {/* <WishList /> */}
       </>
