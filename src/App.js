@@ -13,12 +13,8 @@ import OrderList from "./component/Member_order_list/MemberOrderList";
 import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
 import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
 import MemberCoupon from "./component/Member_coupon/MemberCoupon";
-<<<<<<< HEAD
 import CheckOutContent from './component/checkOutContent/checkOutContent';
-
-=======
 import TripDesNav from './component/TripDesNav/TripDesNav'
->>>>>>> 7c754b59d8bb3290a9b114b3f08be023b240bd89
 
 // page
 import Comment from "./page/comment/Comment.jsx";
@@ -32,14 +28,14 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <TripDesNav/>
-        <CarouselHome />
+        {/* <TripDesNav/> */}
+        {/* <CarouselHome /> */}
         {/* <FilterHome /> */}
         {/* <NavBar /> */}
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
         {/* <MemberPassword /> */}
-        <MemberWishList />
+        {/* <MemberWishList /> */}
         {/* <OrderList /> */}
         {/* <Login /> */}
         {/* <MemberCommentList /> */}

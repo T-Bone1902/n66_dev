@@ -2,7 +2,7 @@ import React from 'react';
 
 
 //CSS
-import './NavBar_home.css';
+import './navbar_home.css';
 
 //SIGNAL
 import Logo from './img/logo.svg';
