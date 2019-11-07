@@ -13,8 +13,8 @@ class MemberLeftMenu extends Component {
   state = {};
   render() {
     return (
-      <>
-        <Card className="member-left-menu-container mb-4">
+      <div className="">
+        <Card className="member-left-menu-container mb-4 member-left-menu-fixed">
           <Card.Img variant="top" src={avatar} className="avatar" />
           <Card.Body>
             <div className="text-align-center card-body-1">
@@ -79,7 +79,7 @@ class MemberLeftMenu extends Component {
             </div>
           </Card.Body>
         </Card>
-      </>
+      </div>
     );
   }
 }

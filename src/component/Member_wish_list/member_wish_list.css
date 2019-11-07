@@ -15,6 +15,7 @@
 .wish-list-container .card {
   border: 1px solid #eaeaea;
   border-radius: 0;
+  margin-bottom: 1.5rem;
 }
 
 .wish-list-title {
@@ -33,7 +34,6 @@
 
 .wish-list-item {
   width: 30%;
-  margin: 10px 10px;
 }
 
 .wish-list-title span {
@@ -47,7 +47,7 @@
   position: absolute;
   height: 1.3rem;
   width: 0.2rem;
-  top: 2rem;
+  top: 2.1rem;
   left: 2rem;
   background-color: #96daf0;
 }

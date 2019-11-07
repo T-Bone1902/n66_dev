@@ -31,6 +31,7 @@ class DashBoard extends Component {
       <>
         <NavBar />
         <div className="container">
+         
           <Row className="member-section">
             <Col className="col-xl-3 col-md-4 ">
               <MemberLeftMenu />
