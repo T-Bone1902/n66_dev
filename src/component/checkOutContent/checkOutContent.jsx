@@ -29,6 +29,7 @@ class CheckOutContent extends React.Component {
                 刪除
               </div>
             </div>
+            {/*  */}
             <div
               className="d-flex p-3"
               style={{ borderBottom: "1px solid #E8E8E8" }}
@@ -146,7 +147,7 @@ class CheckOutContent extends React.Component {
                 </div>
               </div>
             </div>
-
+            {/*  */}
             <div className="d-flex mt-2 ">
               <div style={{ flex: 2 }}></div>
               <div className="pl-2" style={{ flex: 3 }}>
