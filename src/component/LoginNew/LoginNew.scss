@@ -38,15 +38,34 @@ button {
     }
 
     .signIn{
+      overflow: hidden;
       position: relative;
       top: 0%;
       left: 0%;
       background-color: rgb(184, 102, 36);
       width: $formW;
-      min-height: 550px;
+      height: 550px;
       transition: transform 1.2s ease-in-out;
       padding: 0 15px 0 15px;
       z-index: 2;
+
+      h2{
+        color: $primaryColor;
+      }
+
+      .sign-in{
+        transition: .8s ease-in-out;
+      }
+
+      .sign-up{
+        position: absolute !important;
+        top: 200%;
+        width: 100%;
+        height: 100%;
+        // margin-bottom: 500px;
+        // background-color: rgba(255, 255, 255, 0.801);
+        transition: transform 1.2s ease-in-out, top 1.2s ease-in-out;
+      }
     }
     
 
@@ -65,8 +84,17 @@ button {
 
     .img{
       height: 550px;
-      // padding-top: 100px;
-      pointer-events: none;
+      padding-top: 80px;
+      position: relative;
+      z-index: 99;
+
+
+      .inner{
+        width: 350px;
+        height: 80px;
+        overflow: hidden;
+        margin: 0 auto 210px auto;
+      }
     }
 
     
@@ -95,6 +123,10 @@ button {
           z-index: -1;
         }
 
+        .sub-cont{
+          // pointer-events: none;
+        }
+
         .__text {
           // z-index: 2;
           // // position: absolute;
@@ -106,9 +138,11 @@ button {
           // color: #fff;
           // transition: transform $switchAT ease-in-out;
           // margin: 0 auto;
+
+          
   
           h2 {
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: normal;
             text-align: center;
             z-index: 2;
@@ -124,10 +158,19 @@ button {
           }     
         }
 
+        .m--in{
+          // position: absolute;
+          // right: 610px;
+        }
+
+        .m--up{
+          // position: absolute;
+        }
+
 
         .__btn {
           overflow: hidden;
-          z-index: 2;
+          // z-index: 99;
           position: relative;
           width: $btnW;
           height: $btnH;
@@ -136,6 +179,8 @@ button {
           color: #fff;
           font-size: 15px;
           cursor: pointer;
+          transition: opacity .5s ease-in-out;
+
       
           &:after {
             content: "";
@@ -149,7 +194,8 @@ button {
             border-radius: 0;
           }
       
-          span {
+          a {
+            display: block;
             position: absolute;
             left: 0;
             top: 0;
@@ -158,6 +204,7 @@ button {
             align-items: center;
             width: 100%;
             height: 100%;
+            color: #fff;
             transition: transform $switchAT;
           }
 
@@ -171,6 +218,9 @@ button {
               // transform: translateY($btnH * 2);
           }
       }
+
+
+      
   } 
 }
 
@@ -276,13 +326,13 @@ input:focus {
         left: 0 !important;
         width: 100% !important;
         // transform: translate(0, -100%);
-        height: 50% !important;
+        // height: 50% !important;
     }
 
     .signIn{
       width: 100% !important;
         // transform: translate(0, 100%);
-      height: 300px !important;
+      // height: 300px !important;
     }
     
 }
