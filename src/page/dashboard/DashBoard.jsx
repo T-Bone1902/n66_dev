@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import NavBar from "../../component/NavBar/NavBar";
-import MemberLeftMenu from "../../component/member_left_menu/MemberLeftMenu";
-import MemberInfoList from "../../component/Member_info_list/MemberInfoList";
-import MemberPassword from "../../component/Member_password/MemberPassword";
-import MemberCommentList from "../../component/Member_comment_list/MemberCommentList";
-import MemberOrderList from "../../component/Member_order_list/MemberOrderList";
-import MemberWishList from "../../component/Member_wish_list/MemberWishList";
-import MemberCoupon from "../../component/Member_coupon/MemberCoupon";
+import MemberLeftMenu from "../../component/MemberLeftMenu/MemberLeftMenu";
+import MemberInfoList from "../../component/MemberInfoList/MemberInfoList";
+import MemberPassword from "../../component/MemberPassword/MemberPassword";
+import MemberCommentList from "../../component/MemberCommentList/MemberCommentList";
+import MemberOrderList from "../../component/MemberOrderList/MemberOrderList";
+import MemberWishList from "../../component/MemberWishList/MemberWishList";
+import MemberCoupon from "../../component/MemberCoupon/MemberCoupon";
 
 import axios from "axios";
-import "./dashboard.css";
+import "./DashBoard.css";
 //
 import { Route, Switch } from "react-router-dom";
 //
@@ -33,10 +33,10 @@ class DashBoard extends Component {
         <div className="container">
          
           <Row className="member-section">
-            <Col className="col-xl-3 col-md-4 ">
+            <Col className="col-xl-3 col-md-4 member-left-section">
               <MemberLeftMenu />
             </Col>
-            <Col className="col-xl-9 col-md-8 ">
+            <Col className="col-xl-9 col-md-8 member-right-section">
               <Switch>
                 <Route path="/members/coupons" component={MemberCoupon} />
                 <Route path="/members/comments" component={MemberCommentList} />

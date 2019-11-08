@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Nav, Breadcrumb } from "react-bootstrap";
-import { ReactComponent as Logo } from "./img/logo.svg";
-import { ReactComponent as User } from "./img/user.svg";
-import { ReactComponent as Cart } from "./img/cart.svg";
-import "./navbar.css";
+import { ReactComponent as Logo } from "./images/logo.svg";
+import { ReactComponent as User } from "./images/user.svg";
+import { ReactComponent as Cart } from "./images/cart.svg";
+import "./Navbar.css";
 class NavBar extends React.Component {
   state = {};
 

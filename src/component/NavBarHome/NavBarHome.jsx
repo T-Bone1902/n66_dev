@@ -1,5 +1,13 @@
 import React from "react";
-import "./N66navbar.css";
+
+//Routers
+import { Link, Switch, Route } from "react-router-dom";
+
+//Components
+import DashBoard from "../../page/DashBoard/DashBoard";
+import Home from "../../page/Home/Home";
+//CSS
+import "./NavBarHome.css";
 
 //SIGNAL
 import Logo from "./images/logo.svg";
@@ -7,7 +15,7 @@ import email from "./images/email.svg";
 import user from "./images/user.svg";
 import phone from "./images/phone.svg";
 
-class N66navbar extends React.Component {
+class NavBar_home extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -65,7 +73,7 @@ class N66navbar extends React.Component {
       <>
         <div className="n66navbar d-flex">
           <div className="brand" href="#home">
-            <img src={Logo} alt="N66" style={{ width: "150px" }} />
+            <img src={Logo} alt="N66" />
           </div>
 
           <div className="n66collapse " id="responsive-navbar-nav ">
@@ -74,10 +82,13 @@ class N66navbar extends React.Component {
                 <img className="email" src={email} alt="email" />
                 通訊
               </a>
-              <a href="#5" className=" d-flex align-items-center nav-top-item">
+              <Link
+                to="/members"
+                className=" d-flex align-items-center nav-top-item"
+              >
                 <img className="user" src={user} alt="user" />
                 客戶專區
-              </a>
+              </Link>
               <a href="#6" className=" d-flex align-items-center nav-top-item">
                 <img className="phone" src={phone} alt="phone" />
                 聯繫我們
@@ -90,25 +101,25 @@ class N66navbar extends React.Component {
                 <h6>探險的開始</h6>
                 <div className="blue-line"></div>
               </a>
-              <a href="#7" className="nav-item">
-                <h5>活動與主題</h5>
-                <h6>我們的旅程</h6>
-                <div className="blue-line"></div>
-              </a>
               <a href="#deets" className="nav-item">
-                <h5>器具與裝備</h5>
+                <h5>裝備與器具</h5>
                 <h6>戶外用品</h6>
                 <div className="blue-line"></div>
               </a>
+              <Link to="/comments" className="nav-item">
+                <h5>意見與反饋</h5>
+                <h6>客戶評論</h6>
+                <div className="blue-line"></div>
+              </Link>
+
               <a href="#deets" className="nav-item">
-                <h5>關於66N</h5>
-                <h6>我們的價值觀</h6>
+                <h5>關於66°N</h5>
+                <h6>我們的理念</h6>
                 <div className="blue-line"></div>
               </a>
             </div>
           </div>
           <a
-            href="#ss"
             className="n66toggler ml-auto d-flex justify-content-center align-items-center"
             role="button"
           >
@@ -151,4 +162,4 @@ class N66navbar extends React.Component {
   }
 }
 
-export default N66navbar;
+export default NavBar_home;
