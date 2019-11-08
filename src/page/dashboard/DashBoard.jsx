@@ -33,10 +33,10 @@ class DashBoard extends Component {
         <div className="container">
          
           <Row className="member-section">
-            <Col className="col-xl-3 col-md-4 ">
+            <Col className="col-xl-3 col-md-4 member-left-section">
               <MemberLeftMenu />
             </Col>
-            <Col className="col-xl-9 col-md-8 ">
+            <Col className="col-xl-9 col-md-8 member-right-section">
               <Switch>
                 <Route path="/members/coupons" component={MemberCoupon} />
                 <Route path="/members/comments" component={MemberCommentList} />
