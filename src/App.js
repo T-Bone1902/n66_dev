@@ -16,6 +16,7 @@ import MemberCoupon from "./component/Member_coupon/MemberCoupon";
 import CheckOutContent from "./component/checkOutContent/checkOutContent";
 import TripDesNav from "./component/TripDesNav/TripDesNav";
 import CommentModal from "./component/CommentModal/CommentModal";
+import HeaderCarousel from "./component/Home_Main_Carousel/HeaderCarousel";
 
 // page
 import Comment from "./page/comment/Comment.jsx";
@@ -24,8 +25,9 @@ import Order from "./page/order/Order";
 import WishList from "./page/wishlist/WishList";
 import Home from "./page/Home/Home";
 
-//
-import { Route } from "react-router-dom";
+
+// Routers
+import { Route, Switch } from "react-router-dom";
 
 class App extends React.Component {
   render() {
@@ -45,7 +47,8 @@ class App extends React.Component {
         {/* <CommentFilterBox /> */}
         {/* <CheckOutContent /> */}
         {/* <CommentModal /> */}
-        <NavBarHome />
+        {/* <NavBarHome /> */}
+        {/* <HeaderCarousel /> */}
 
         {/* page */}
         {/* <Comment /> */}
@@ -53,6 +56,11 @@ class App extends React.Component {
         {/* <Order /> */}
         {/* <WishList /> */}
         {/* <Home /> */}
+        <Switch>
+          <Route path="/comments" component={Comment} />
+          <Route path="/members" component={DashBoard} />
+          <Route path="/" exact component={Home} />
+        </Switch>
       </>
     );
   }
