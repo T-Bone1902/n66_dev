@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
-import { ReactComponent as Star } from "./img/star.svg";
-import { ReactComponent as StarSolid } from "./img/star-solid.svg";
-import "./comment_modal.css";
+import { ReactComponent as Star } from "./images/star.svg";
+import { ReactComponent as StarSolid } from "./images/star-solid.svg";
+import "./CommentModal.css";
 class CommentModal extends Component {
   state = {};
 
@@ -30,11 +30,21 @@ class CommentModal extends Component {
               <Star height="16" width="16" />
               <Star height="16" width="16" />
             </div>
-            <textarea className="comment-content" type="text" name="" id="" placeholder="分享您的旅行體驗..." />
+            <textarea
+              className="comment-content"
+              type="text"
+              name=""
+              id=""
+              placeholder="分享您的旅行體驗..."
+            />
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.props.onHide} className="modal-btn">送出</Button>
-            <Button onClick={this.props.onHide} className="modal-btn">取消</Button>
+            <Button onClick={this.props.onHide} className="modal-btn">
+              送出
+            </Button>
+            <Button onClick={this.props.onHide} className="modal-btn">
+              取消
+            </Button>
           </Modal.Footer>
         </Modal>
       </form>

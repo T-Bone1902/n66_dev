@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import NavBar from "../../component/NavBar/NavBar";
-import MemberLeftMenu from "../../component/member_left_menu/MemberLeftMenu";
-import MemberWishList from "../../component/Member_wish_list/MemberWishList";
+import MemberLeftMenu from "../../component/MemberLeftMenu/MemberLeftMenu";
+import MemberWishList from "../../component/MemberWishList/MemberWishList";
 
-import "./wishlist.css";
+import "./WishList.css";
 class WishList extends Component {
   state = {};
   render() {
@@ -17,7 +17,7 @@ class WishList extends Component {
               <MemberLeftMenu />
             </Col>
             <div className="col-xl-9 col-md-8 ">
-              <MemberWishList />    
+              <MemberWishList />
             </div>
           </Row>
         </div>

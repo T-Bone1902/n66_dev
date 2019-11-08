@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card, Form } from "react-bootstrap";
 
-import "./checkOutContent.css";
+import "./CheckOutContent.css";
 
 class CheckOutContent extends React.Component {
   constructor(props) {

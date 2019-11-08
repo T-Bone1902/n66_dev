@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import MemberLeftMenu from "../../component/member_left_menu/MemberLeftMenu";
-import MemberCommentList from "../../component/Member_comment_list/MemberCommentList";
-import CommentFilterBox from "../../component/Comment_filter_box/CommentFilterBox";
+import MemberLeftMenu from "../../component/MemberLeftMenu/MemberLeftMenu";
+import MemberCommentList from "../../component/MemberCommentList/MemberCommentList";
+import CommentFilterBox from "../../component/CommentFilterBox/CommentFilterBox";
 import NavBar from "../../component/NavBar/NavBar";
 import { Row, Col, DropdownButton, Dropdown } from "react-bootstrap";
-import { ReactComponent as Star } from "./img/star.svg";
-import { ReactComponent as StarSolid } from "./img/star-solid.svg";
+import { ReactComponent as Star } from "./images/star.svg";
+import { ReactComponent as StarSolid } from "./images/star-solid.svg";
 
-import "./comment.css";
+import "./Comment.css";
 class Comment extends Component {
   state = {};
   render() {

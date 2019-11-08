@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import NavBar from "../../component/NavBar/NavBar";
-import MemberLeftMenu from "../../component/member_left_menu/MemberLeftMenu";
-import MemberOrderList from "../../component/Member_order_list/MemberOrderList";
-import "./order.css";
+import MemberLeftMenu from "../../component/MemberLeftMenu/MemberLeftMenu";
+import MemberOrderList from "../../component/MemberOrderList/MemberOrderList";
+import "./Order.css";
 class Order extends Component {
   state = {};
   render() {

@@ -1,30 +1,30 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBarHome from "./component/NavBar_home/NavBar_home";
-import CarouselHome from "./component/Carousel_home/CarouselHome";
 import FilterHome from "./component/Filter_home/FilterHome";
-// import Login from "./component/Login/Login";
+// complete
 import NavBar from "./component/NavBar/NavBar";
-import MemberLeftMenu from "./component/member_left_menu/MemberLeftMenu";
-import MemberInfoList from "./component/Member_info_list/MemberInfoList";
-import MemberPassword from "./component/Member_password/MemberPassword";
-import MemberWishList from "./component/Member_wish_list/MemberWishList";
-import OrderList from "./component/Member_order_list/MemberOrderList";
-import MemberCommentList from "./component/Member_comment_list/MemberCommentList";
-import CommentFilterBox from "./component/Comment_filter_box/CommentFilterBox";
-import MemberCoupon from "./component/Member_coupon/MemberCoupon";
-import CheckOutContent from "./component/checkOutContent/checkOutContent";
+import MemberLeftMenu from "./component/MemberLeftMenu/MemberLeftMenu";
+import MemberInfoList from "./component/MemberInfoList/MemberInfoList";
+import MemberPassword from "./component/MemberPassword/MemberPassword";
+import MemberWishList from "./component/MemberWishList/MemberWishList";
+import MemberOrderList from "./component/MemberOrderList/MemberOrderList";
+import MemberCommentList from "./component/MemberCommentList/MemberCommentList";
+import MemberCoupon from "./component/MemberCoupon/MemberCoupon";
+import NavBarHome from "./component/NavBarHome/NavBarHome";
+import HomeMainCarousel from "./component/HomeMainCarousel/HomeMainCarousel";
+import CommentFilterBox from "./component/CommentFilterBox/CommentFilterBox";
+import CheckOutContent from "./component/CheckOutContent/CheckOutContent";
 import TripDesNav from "./component/TripDesNav/TripDesNav";
+
+// import Login from "./component/Login/Login";
 import CommentModal from "./component/CommentModal/CommentModal";
-import HeaderCarousel from "./component/Home_Main_Carousel/HeaderCarousel";
 
 // page
-import Comment from "./page/comment/Comment.jsx";
-import DashBoard from "./page/dashboard/DashBoard";
-import Order from "./page/order/Order";
-import WishList from "./page/wishlist/WishList";
+import Comment from "./page/Comment/Comment";
+import DashBoard from "./page/DashBoard/DashBoard";
+import Order from "./page/Order/Order";
+import WishList from "./page/WishList/WishList";
 import Home from "./page/Home/Home";
-
 
 // Routers
 import { Route, Switch } from "react-router-dom";
@@ -33,22 +33,24 @@ class App extends React.Component {
   render() {
     return (
       <>
-        {/* <TripDesNav/> */}
-        {/* <CarouselHome /> */}
-        {/* <FilterHome /> */}
         {/* <NavBar /> */}
         {/* <MemberLeftMenu /> */}
         {/* <MemberInfoList /> */}
         {/* <MemberPassword /> */}
         {/* <MemberWishList /> */}
-        {/* <OrderList /> */}
-        {/* <Login /> */}
+        {/* <MemberOrderList /> */}
         {/* <MemberCommentList /> */}
+        {/* <MemberCoupon /> */}
+        {/* <NavBarHome /> */}
         {/* <CommentFilterBox /> */}
+        {/* <HomeMainCarousel /> */}
         {/* <CheckOutContent /> */}
         {/* <CommentModal /> */}
-        {/* <NavBarHome /> */}
-        {/* <HeaderCarousel /> */}
+       
+        {/*  */}
+        {/* <TripDesNav/> */}
+        {/* <FilterHome /> */}
+        {/* <Login /> */}
 
         {/* page */}
         {/* <Comment /> */}
@@ -56,11 +58,11 @@ class App extends React.Component {
         {/* <Order /> */}
         {/* <WishList /> */}
         {/* <Home /> */}
-        <Switch>
+        {/* <Switch>
           <Route path="/comments" component={Comment} />
           <Route path="/members" component={DashBoard} />
           <Route path="/" exact component={Home} />
-        </Switch>
+        </Switch> */}
       </>
     );
   }

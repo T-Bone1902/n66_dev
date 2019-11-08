@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import { Row, Col } from "react-bootstrap";
 import NavBar from "../../component/NavBar/NavBar";
-import MemberLeftMenu from "../../component/member_left_menu/MemberLeftMenu";
-import MemberInfoList from "../../component/Member_info_list/MemberInfoList";
-import MemberPassword from "../../component/Member_password/MemberPassword";
-import MemberCommentList from "../../component/Member_comment_list/MemberCommentList";
-import MemberOrderList from "../../component/Member_order_list/MemberOrderList";
-import MemberWishList from "../../component/Member_wish_list/MemberWishList";
-import MemberCoupon from "../../component/Member_coupon/MemberCoupon";
+import MemberLeftMenu from "../../component/MemberLeftMenu/MemberLeftMenu";
+import MemberInfoList from "../../component/MemberInfoList/MemberInfoList";
+import MemberPassword from "../../component/MemberPassword/MemberPassword";
+import MemberCommentList from "../../component/MemberCommentList/MemberCommentList";
+import MemberOrderList from "../../component/MemberOrderList/MemberOrderList";
+import MemberWishList from "../../component/MemberWishList/MemberWishList";
+import MemberCoupon from "../../component/MemberCoupon/MemberCoupon";
 
 import axios from "axios";
-import "./dashboard.css";
+import "./DashBoard.css";
 //
 import { Route, Switch } from "react-router-dom";
 //
