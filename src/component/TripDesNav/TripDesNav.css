@@ -58,12 +58,19 @@
   font-size: 1.5rem;
   color: #96DAF0;
   letter-spacing: 10px;
-  margin-left: 45%;
+  text-align: center;
+  margin: auto;
 }
 
 @media (max-width: 1200px) {
   .backGroundImgCover {
     height: 650px;
+  }
+}
+
+@media (max-width: 996px) {
+  .patternBlueInside h1 {
+    font-size: 2rem;
   }
 }
 
@@ -78,8 +85,13 @@
     height: 400px;
   }
   .TripDesNavLocationImg {
-    top: 30%;
-    left: 35%;
+    top: 25%;
+  }
+  .patternBlueInside {
+    top: 25%;
+  }
+  .patternBlueInside p {
+    font-size: 1rem;
   }
   .backGroundImgCover {
     height: 400px;

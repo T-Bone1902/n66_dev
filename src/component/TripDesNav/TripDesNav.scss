@@ -46,7 +46,8 @@
 		font-size:1.5rem;
 		color:#96DAF0;
 		letter-spacing: 10px;
-		margin-left:45%
+		text-align: center;
+		margin: auto;
 	}
 }
 
@@ -67,17 +68,18 @@
 }
 
 
-@media(max-width:992px){
-	// .patternBlueInside{
-	// 	left:30%;
 
-	// 	h1{
-	// 		font-size:3rem;
-	// 	}
-	// 	p{
-	// 		font-size:1.25rem;
-	// 	}
-	// }
+@media(max-width:996px){
+
+	.patternBlueInside{
+		h1{
+			font-size:2rem;
+		}
+	}
+}
+
+@media(max-width:992px){
+
 	.backGroundImgCover{
 		height:550px;
 	}
@@ -97,9 +99,19 @@
 	}
 	.TripDesNavLocationImg{
 		// width:30% !important;
-		top:30%;
-		left:35%;
+		top:25%;
+		
 	}
+
+	.patternBlueInside{
+		top: 25%;
+
+		p{
+			font-size: 1rem;
+		}
+	}
+
+
 	.backGroundImgCover{
 		height:400px;
 	}

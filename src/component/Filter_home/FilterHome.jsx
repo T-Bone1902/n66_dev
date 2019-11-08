@@ -211,81 +211,7 @@ class FilterHome extends Component {
       <>
         <Form className="main-filter-container">
           <Row className="row-no-margin searchbox-row">
-            {/* <Dropdown className="filter-icon-container d-flex-2">
-            <Dropdown.Toggle id="dropdown-basic" className="filter-icon">
-              <Location className="location" height="24" width="24"></Location>
-              <span className="filter-icon-title">目的地</span>
-            </Dropdown.Toggle>
-            <Dropdown.Menu className="toggle-menu">
-              <Dropdown.Item href="#/action-1" className="toggle-item">
-                冰島
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-2" className="toggle-item">
-                挪威
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                芬蘭
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                加拿大
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                俄羅斯
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
 
-          <Dropdown className="filter-icon-container d-flex-2">
-            <Dropdown.Toggle id="dropdown-basic" className="filter-icon">
-              <Trac className="trac" height="24" width="24"></Trac>
-              <span className="filter-icon-title">旅行類型</span>
-            </Dropdown.Toggle>
-            <Dropdown.Menu className="toggle-menu">
-              <Dropdown.Item href="#/action-1" className="toggle-item">
-                冰島
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-2" className="toggle-item">
-                挪威
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                芬蘭
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                加拿大
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                俄羅斯
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-
-          <Dropdown className="filter-icon-container d-flex-2">
-            <Dropdown.Toggle id="dropdown-basic" className="filter-icon">
-              <Binoculars
-                className="binoculars"
-                height="24"
-                width="24"
-              ></Binoculars>
-              <span className="filter-icon-title">活動與主題</span>
-            </Dropdown.Toggle>
-            <Dropdown.Menu className="toggle-menu">
-              <Dropdown.Item href="#/action-1" className="toggle-item">
-                不拘
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-2" className="toggle-item">
-                北極光
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                獨木舟
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                動物觀察
-              </Dropdown.Item>
-              <Dropdown.Item href="#/action-3" className="toggle-item">
-                多種活動
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown> */}
             {searchbox.dom}
             <div
               className="d-flex d-flex-1 search-btn"
@@ -303,6 +229,7 @@ class FilterHome extends Component {
             </div>
           </Row>
         </Form>
+
         <Row className="before-rwd">
           <Col>
             <div className="main-filter-container-rwd d-flex">
@@ -315,6 +242,42 @@ class FilterHome extends Component {
             </div>
           </Col>
         </Row>
+
+        <div className="filter-menu">
+          <div>
+            <a className="filterToggler ml-auto d-flex justify-content-center align-items-center" role="button">
+              <div className="toggle-inner d-flex flex-column justify-content-between align-items-center">
+                <div className="white-line up-line"></div>
+                <div className="white-line down-line"></div>
+              </div>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#8">
+                <h5>旅程目的地</h5>
+              </a>
+            </li>
+            <li>
+              <a href="#19">
+                <h5>活動與主題</h5>
+                
+              </a>
+            </li>
+            <li>
+              <a href="#2">
+                <h5>器具與裝備</h5>
+                
+              </a>
+            </li>
+            <li>
+              <a href="#3">
+                <h5>關於66N</h5>
+                
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     );
   }
