@@ -22,6 +22,8 @@ import Comment from "./page/comment/Comment.jsx";
 import DashBoard from "./page/dashboard/DashBoard";
 import Order from "./page/order/Order";
 import WishList from "./page/wishlist/WishList";
+import Home from "./page/Home/Home";
+
 //
 import { Route } from "react-router-dom";
 
@@ -42,13 +44,15 @@ class App extends React.Component {
         {/* <MemberCommentList /> */}
         {/* <CommentFilterBox /> */}
         {/* <CheckOutContent /> */}
-        {/* {<CommentModal />} */}
+        {/* <CommentModal /> */}
+        <NavBarHome />
 
         {/* page */}
         {/* <Comment /> */}
-        <DashBoard />
+        {/* <DashBoard /> */}
         {/* <Order /> */}
         {/* <WishList /> */}
+        {/* <Home /> */}
       </>
     );
   }
