@@ -9,7 +9,7 @@ import "./LoginNew.css";
 
 class LoginNew extends React.Component {
     componentDidMount() {
-        // let signIn = document.querySelector('.signIn');
+        
         // let img = document.querySelector('.img');
         // let mountainBg = document.querySelector('.mountainBg');
 
@@ -19,18 +19,33 @@ class LoginNew extends React.Component {
         //     img.style.transform = "translate3d(-610px, 0, 0)";
         //     mountainBg.style.transform = "translate3d(610px, 0, 0)";
         // })
+        let signIn = document.querySelector('.signIn');
+        let registered = document.querySelector('.registered');
+        let mountainBg = document.querySelector('.mountainBg');
+
+        let img = document.querySelector('.img');
+        let signInForm = document.querySelector('.sign-in');
+        let signUpForm = document.querySelector('.sign-up');
+        let signUpBtn = document.querySelector('.__btn');
+        signUpBtn.addEventListener('click', ()=>{
+            registered.style.transform = 'translate(-610px, 0)';
+            mountainBg.style.transform = 'translate(610px, 0)'
+            signIn.style.transform ='translate(350px, 0)';
+            signInForm.style.opacity = '0';
+            signUpForm.style.top = '0';
+            // img.style.pointerEvents = 'none';
+        })
     }
 
     render() {
         return (
             <Container className="cont">
                 <Row>
-                    
                     <div className="signIn">
                         <div className="logo">
                             <Logo />
                         </div>
-                        <div>
+                        <div className="position-relative">
                             <form className="form sign-in" method="">
                                 <h2>會員登入</h2>
                                 <label>
@@ -44,44 +59,48 @@ class LoginNew extends React.Component {
                                     登入
                                 </button>
                             </form>
+
+                            <form className="form sign-up" method="">
+                                <div className=" ">
+                                    <h2>會員註冊</h2>
+                                    <label>
+                                        <input type="email" placeholder="電子信箱" />
+                                    </label>
+                                    <label>
+                                        <input type="password" placeholder="密碼" />
+                                    </label>
+                                    <label>
+                                        <input type="password" placeholder="確認密碼" />
+                                    </label>
+                                    <button type="submit" className="submit register">
+                                        註冊
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <div className="registered">
                         <div className="mountainBg"></div>
-                        <form className="sub-cont" method="">
+                        <div className="sub-cont" >
                             <div className="img">
-                                <div className="__text m--up">
-                                    <h2>加入</h2>
-                                    <p>探索更多旅程</p>
+                                <div className="inner">
+                                    <div className="__text m--up">
+                                        <h2>加入</h2>
+                                        <p>探索更多旅程</p>
+                                    </div>
+                                    <div className="__text m--in">
+                                        <h2>發現</h2>
+                                        <p>獨一無二的冒險</p>
+                                    </div>
                                 </div>
-                                <div className="__text m--in">
-                                    <h2>發現</h2>
-                                    <p>獨一無二的冒險</p>
-                                </div>
+
                                 <div className="__btn">
-                                    <span className="m--up">註冊</span>
-                                    <span className="m--in">登入</span>
+                                    <a href="#2" role="button" className="m--up">註冊</a>
+                                    <a href="#3" role="button" className="m--in">登入</a>
                                 </div>
                             </div>
-
-                            <div className="form sign-up">
-                                <h2>會員註冊</h2>
-                                <label>
-                                    <input type="email" placeholder="電子信箱" />
-                                </label>
-                                <label>
-                                    <input type="password" placeholder="密碼" />
-                                </label>
-                                <label>
-                                    <input type="password" placeholder="確認密碼" />
-                                </label>
-                                <button type="submit" className="submit register">
-                                    註冊
-                                </button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
-
                 </Row>
             </Container>
         );
