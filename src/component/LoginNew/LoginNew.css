@@ -1,16 +1,16 @@
-input,
-button {
-  border: none;
-  outline: none;
-  background: none;
-}
-
 .cont {
-  background-color: #cc3636;
+  background-color: #fff;
   position: relative;
   max-width: 960px;
   min-height: 550px;
-  margin: 7rem auto;
+  margin: 2rem auto;
+}
+
+.cont input,
+.cont button {
+  border: none;
+  outline: none;
+  background: none;
 }
 
 .cont .logo svg {
@@ -27,7 +27,7 @@ button {
   position: relative;
   top: 0%;
   left: 0%;
-  background-color: #b86624;
+  background-color: #fff;
   width: 610px;
   height: 550px;
   -webkit-transition: -webkit-transform 1.2s ease-in-out;
@@ -43,8 +43,8 @@ button {
 }
 
 .cont .signIn .sign-in {
-  -webkit-transition: .8s ease-in-out;
-  transition: .8s ease-in-out;
+  -webkit-transition: .7s .2s ease-out, opacity .7s .2s ease-out;
+  transition: .7s .2s ease-out, opacity .7s .2s ease-out;
 }
 
 .cont .signIn .sign-up {
@@ -52,10 +52,10 @@ button {
   top: 200%;
   width: 100%;
   height: 100%;
-  -webkit-transition: top 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-  transition: top 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, top 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, top 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  -webkit-transition: top 1.2s ease-in-out, opacity .3s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  transition: top 1.2s ease-in-out, opacity .3s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, top 1.2s ease-in-out, opacity .3s ease-in-out;
+  transition: transform 1.2s ease-in-out, top 1.2s ease-in-out, opacity .3s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
 
 .cont .mountainBg {
@@ -66,10 +66,10 @@ button {
   height: 100%;
   background-image: url("./img/photo-1501696088263-5696c92364bf.png");
   background-size: cover;
-  -webkit-transition: -webkit-transform 1.2s ease-in-out;
-  transition: -webkit-transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out;
-  transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  -webkit-transition: opacity 0.8s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  transition: opacity 0.8s ease-in-out, -webkit-transform 1.2s ease-in-out;
+  transition: transform 1.2s ease-in-out, opacity 0.8s ease-in-out;
+  transition: transform 1.2s ease-in-out, opacity 0.8s ease-in-out, -webkit-transform 1.2s ease-in-out;
   z-index: -1;
 }
 
@@ -111,6 +111,11 @@ button {
   background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
   z-index: -1;
+}
+
+.cont .registered .__text {
+  -webkit-transition: all 1.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
 }
 
 .cont .registered .__text h2 {
@@ -183,7 +188,7 @@ button {
           transform: translateY(-100px);
 }
 
-button {
+.cont button {
   display: block;
   margin: 0 auto;
   width: 180px;
@@ -193,7 +198,7 @@ button {
   cursor: pointer;
 }
 
-.submit:hover {
+.cont .submit:hover {
   background-color: #96daf0;
   border: 2px solid #96daf0;
   color: #fff;
@@ -201,7 +206,7 @@ button {
   transition: 0.5s;
 }
 
-h2 {
+.cont h2 {
   color: #fff;
   position: relative;
   width: 100%;
@@ -211,7 +216,7 @@ h2 {
   font-weight: 300;
 }
 
-.form h2::after {
+.cont .form h2::after {
   content: "";
   position: absolute;
   bottom: 0%;
@@ -223,19 +228,19 @@ h2 {
   background-color: #96daf0;
 }
 
-label {
+.cont label {
   display: block;
   width: 300px;
   margin: 25px auto 0;
   text-align: center;
 }
 
-label span {
+.cont label span {
   font-size: 12px;
   color: #cfcfcf;
 }
 
-input {
+.cont input {
   display: block;
   width: 100%;
   margin-top: 5px;
@@ -244,40 +249,47 @@ input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-input::-webkit-input-placeholder {
+.cont input::-webkit-input-placeholder {
   color: #cacaca;
   font-size: 14px;
 }
 
-input:-ms-input-placeholder {
+.cont input:-ms-input-placeholder {
   color: #cacaca;
   font-size: 14px;
 }
 
-input::-ms-input-placeholder {
+.cont input::-ms-input-placeholder {
   color: #cacaca;
   font-size: 14px;
 }
 
-input::placeholder {
+.cont input::placeholder {
   color: #cacaca;
   font-size: 14px;
 }
 
-input:focus {
-  border-bottom: 2px solid #96daf0;
+.cont input:focus {
+  border-bottom: 1px solid #96daf0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
 
-.forgot-pass {
+.cont .forgot-pass {
+  display: block;
   margin-top: 27px;
   text-align: center;
   font-size: 12px;
   color: #cfcfcf;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.submit {
+.cont .forgot-pass:hover {
+  color: #96daf0;
+}
+
+.cont .submit {
   margin: 65px auto 40px auto;
   background: #fff;
   border: 2px solid #cacaca;
@@ -285,16 +297,37 @@ input:focus {
   font-weight: 200;
 }
 
-.register {
+.cont .register {
   margin-top: 50px !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 981px) {
+  .loginRow {
+    background-image: url("./img/photo-1501696088263-5696c92364bf.png");
+    background-size: cover;
+  }
+  .signIn {
+    width: 100% !important;
+    z-index: 999 !important;
+  }
   .registered {
     top: 100% !important;
     left: 0 !important;
     width: 100% !important;
+    z-index: -4;
   }
+  .registered .mountainBg {
+    z-index: -3;
+  }
+  .registered .sub-cont {
+    z-index: -2;
+  }
+  .registered .img {
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .signIn {
     width: 100% !important;
   }

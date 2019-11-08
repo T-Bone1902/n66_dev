@@ -10,21 +10,23 @@ $inputW: 300px;
 $btnW: 180px;
 $btnH: 50px;
 
-input,
-button {
-  border: none;
-  outline: none;
-  background: none;
-}
 
 .cont{
-    background-color: rgb(204, 54, 54);
-    // overflow: hidden;
-    position: relative;
-    max-width: $contW;
-    min-height: 550px;
-    margin: 7rem auto;
-    
+  background-color: #fff;
+  // overflow: hidden;
+  position: relative;
+  max-width: $contW;
+  min-height: 550px;
+  margin: 2rem auto;
+  
+    input,
+    button {
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+
 
     .logo {
         svg{
@@ -42,7 +44,7 @@ button {
       position: relative;
       top: 0%;
       left: 0%;
-      background-color: rgb(184, 102, 36);
+      background-color: #fff;
       width: $formW;
       height: 550px;
       transition: transform 1.2s ease-in-out;
@@ -54,7 +56,7 @@ button {
       }
 
       .sign-in{
-        transition: .8s ease-in-out;
+        transition:  .7s .2s ease-out, opacity .7s .2s ease-out;
       }
 
       .sign-up{
@@ -64,7 +66,7 @@ button {
         height: 100%;
         // margin-bottom: 500px;
         // background-color: rgba(255, 255, 255, 0.801);
-        transition: transform 1.2s ease-in-out, top 1.2s ease-in-out;
+        transition: transform 1.2s ease-in-out, top 1.2s ease-in-out, opacity .3s ease-in-out;
       }
     }
     
@@ -77,7 +79,7 @@ button {
       height: 100%;
       background-image: url("./img/photo-1501696088263-5696c92364bf.png");
       background-size: cover;
-      transition: transform $switchAT ease-in-out;
+      transition: transform $switchAT ease-in-out, opacity .8s ease-in-out;
       z-index: -1;
     }
 
@@ -123,9 +125,9 @@ button {
           z-index: -1;
         }
 
-        .sub-cont{
-          // pointer-events: none;
-        }
+        // .sub-cont{
+        //   // pointer-events: none;
+        // }
 
         .__text {
           // z-index: 2;
@@ -136,7 +138,7 @@ button {
           // padding: 0 20px;
           // text-align: center;
           // color: #fff;
-          // transition: transform $switchAT ease-in-out;
+          transition: all $switchAT ease-in-out;
           // margin: 0 auto;
 
           
@@ -158,14 +160,15 @@ button {
           }     
         }
 
-        .m--in{
-          // position: absolute;
-          // right: 610px;
-        }
+        // .m--in{
+        //   // position: absolute;
+        //   // right: 610px;
+        // }
 
-        .m--up{
-          // position: absolute;
-        }
+        // .m--up{
+        //   // position: absolute;
+          
+        // }
 
 
         .__btn {
@@ -214,15 +217,13 @@ button {
               // transform: translateY(0);
           }
     
-          .m--up {
-              // transform: translateY($btnH * 2);
-          }
+          // .m--up {
+          //     // transform: translateY($btnH * 2);
+              
+          // }
       }
-
-
-      
   } 
-}
+
 
 
 
@@ -236,103 +237,136 @@ button {
     cursor: pointer;
   }
 
-  // hover
+  
 
-.submit:hover {
-  background-color: #96daf0;
-  border: 2px solid #96daf0;
-  color: #fff;
-  transition: 0.5s;
-}
-
-
-h2 {
-  color: #fff;
-  position: relative;
-  width: 100%;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 4rem;
-  font-weight: 300;
-}
-
-.form h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  transform: translate(-50%,10px);
-  width: 100px;
-  height: 2px;
-  background-color: #96daf0;
-}
-
-label {
-  display: block;
-  width: $inputW;
-  margin: 25px auto 0;
-  text-align: center;
-
-  span {
-    font-size: 12px;
-    color: #cfcfcf;
+  .submit:hover {
+    background-color: #96daf0;
+    border: 2px solid #96daf0;
+    color: #fff;
+    transition: 0.5s;
   }
-}
 
-input {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-  padding-bottom: 5px;
-  font-size: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
 
-input::placeholder {
-  color: #cacaca;
-  font-size: 14px;
-}
+  h2 {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 300;
+  }
 
-input:focus {
-  border-bottom: 2px solid #96daf0;
-  transition: 0.8s;
-}
+  .form h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,10px);
+    width: 100px;
+    height: 2px;
+    background-color: #96daf0;
+  }
+
+  label {
+    display: block;
+    width: $inputW;
+    margin: 25px auto 0;
+    text-align: center;
+
+    span {
+      font-size: 12px;
+      color: #cfcfcf;
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  input::placeholder {
+    color: #cacaca;
+    font-size: 14px;
+  }
+
+  input:focus {
+    border-bottom: 1px solid #96daf0;
+    transition: 0.8s;
+  }
 
 .forgot-pass {
+  display: block;
   margin-top: 27px;
-  // margin-bottom: 30px;
   text-align: center;
   font-size: 12px;
   color: #cfcfcf;
+  transition: .3s ;
+
+  &:hover{
+    color: $secColor;
+  }
 }
 
-.submit {
-  margin: 65px auto 40px auto;
-  background: #fff;
-  border: 2px solid #cacaca;
-  color: #2a2a3a;
-  font-weight: 200;
+  .submit {
+    margin: 65px auto 40px auto;
+    background: #fff;
+    border: 2px solid #cacaca;
+    color: #2a2a3a;
+    font-weight: 200;
+  }
+
+
+  .register {
+    margin-top: 50px !important;
+  }
+
 }
 
 
-.register {
-  margin-top: 50px !important;
-}
+@media screen and (max-width: 981px){
 
+
+  .loginRow{
+    background-image: url("./img/photo-1501696088263-5696c92364bf.png");
+    background-size: cover;
+  }
+
+  .signIn{
+    width: 100% !important;
+    z-index: 999 !important
+  }
+
+  .registered{
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: -4;
+
+    .mountainBg{
+      z-index: -3;
+    }
+
+    .sub-cont{
+      z-index: -2;
+    }
+
+    .img{
+      z-index: 0;
+    }
+  }
+
+
+}
 
 @media screen and (max-width: 768px){
-    .registered{
-        top: 100% !important;
-        left: 0 !important;
-        width: 100% !important;
-        // transform: translate(0, -100%);
-        // height: 50% !important;
-    }
 
     .signIn{
       width: 100% !important;
-        // transform: translate(0, 100%);
-      // height: 300px !important;
     }
     
 }

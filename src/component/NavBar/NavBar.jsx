@@ -3,7 +3,7 @@ import { Nav, Breadcrumb } from "react-bootstrap";
 import { ReactComponent as Logo } from "./images/logo.svg";
 import { ReactComponent as User } from "./images/user.svg";
 import { ReactComponent as Cart } from "./images/cart.svg";
-import "./Navbar.css";
+import "./NavBar.css";
 class NavBar extends React.Component {
   state = {};
 
