@@ -58,11 +58,11 @@ class App extends React.Component {
         {/* <Order /> */}
         {/* <WishList /> */}
         {/* <Home /> */}
-        {/* <Switch>
+        <Switch>
           <Route path="/comments" component={Comment} />
           <Route path="/members" component={DashBoard} />
           <Route path="/" exact component={Home} />
-        </Switch> */}
+        </Switch>
       </>
     );
   }

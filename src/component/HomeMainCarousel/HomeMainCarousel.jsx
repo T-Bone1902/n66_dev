@@ -15,7 +15,7 @@ import sliderImg5 from "./images/canoe-sur-la-riviere-batiscan-au-quebec-2233.jp
 import sliderImg7 from "./images/voyage-dans-les-iles-lofoten-en-norvege-du-nord-72.jpg";
 // import sliderImg8 from "../../images/images/voyage-ski-pulka-au-spitzberg-2143.jpg";
 
-class HeaderCarousel extends React.Component {
+class HomeMainCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -257,4 +257,4 @@ class HeaderCarousel extends React.Component {
   }
 }
 
-export default HeaderCarousel;
+export default HomeMainCarousel;
